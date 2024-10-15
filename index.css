@@ -1,0 +1,119 @@
+img {
+  height: 200px;
+  border-radius: 50%;
+}
+
+body {
+  background-color: yellow;
+  margin: 0;
+  cursor: url("./images/target-scope.png"), pointer;
+}
+
+#navbar {
+  background-color: #ededed;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  background-color: brown;
+}
+.right > div{
+    display:flex;
+    gap:20px;
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+  cursor: url("./images/target-scope.png"), pointer;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.navLink:hover {
+  text-decoration: overline;
+  font-weight: 600px;
+}
+#estimate:hover {
+  color: green;
+  background-color: black;
+}
+
+#estimate {
+  border: 1px solid black;
+  border-radius: 20px;
+  color: #fd4601;
+  background-color: #ededed;
+  padding: 10px 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* descendant combinator */
+
+/* .box h2 {
+    color: red;
+  } */
+
+/* child combinator */
+.box > p {
+  color: blue;
+}
+
+.box + p {
+  color: green;
+  font-size: 30px;
+}
+#text {
+  text-align: right;
+  line-height: 40px;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+
+.box1 {
+  background-color: red;
+  height: 3rem;
+  width: 3rem;
+}
+
+.box2 {
+  background-color: blue;
+  height: 3rem;
+  width: 3rem;
+  visibility: visible;
+  /* display:inline-block */
+}
+.box3 {
+  background-color: violet;
+  height: 4rem;
+  width: 3rem;
+}
+.flexbox {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  flex-wrap: nowrap;
+  width: 30vw;
+  justify-content: space-around;
+  align-items: last baseline;
+  gap: 20px;
+}
+.flexbox1 {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  height: 100vh;
+  justify-content: end;
+  align-items: center;
+}
